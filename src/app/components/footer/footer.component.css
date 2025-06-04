@@ -1,0 +1,11 @@
+.footer-container {
+  background-color: var(--color-negro-oscuro);
+  color: var(--color-blanco-suave);
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.7);
+}

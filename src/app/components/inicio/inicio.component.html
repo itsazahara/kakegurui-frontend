@@ -1,0 +1,10 @@
+<body>
+  <h2>Personajes de Kakegurui</h2>
+  <div class="grid-container">
+    <div class="card" *ngFor="let personaje of personajes">
+      <img [src]="personaje.imagen" [alt]="personaje.nombre" />
+      <h3>{{ personaje.nombre }}</h3>
+      <p>{{ personaje.role }}</p>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,88 @@
+:root {
+  --color-rojo: #c9020f;       /* rojo vibrante */
+  --color-negro-claro: #292329; /* fondo oscuro */
+  --color-negro-oscuro: #1e181c; /* negro aún más oscuro */
+  --color-crema: #f2ded2;      /* color claro crema */
+  --color-blanco-suave: #f7f6fd; /* blanco con toque suave */
+}
+
+body {
+  background-color: var(--color-blanco-suave);
+  color: var(--color-negro-claro);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: var(--color-rojo);
+  border: none;
+  color: var(--color-blanco-suave);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a0000b; /* rojo oscuro al pasar el mouse */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.card {
+  background-color: var(--color-negro-oscuro);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  color: var(--color-negro-claro);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+a, .highlight {
+  color: var(--color-rojo);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover, .highlight:hover {
+  text-decoration: underline;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-rojo) var(--color-negro-claro);
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-negro-claro);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-rojo);
+  border-radius: 10px;
+  border: 2px solid var(--color-negro-claro);
+}
+
