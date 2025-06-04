@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet');
+
 .header {
+  font-family: "Playfair Display", serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +27,7 @@
 }
 
 .nav a:hover, .nav a.active {
-  color: #f39c12; /* un naranja bonito para resaltar */
-  border-bottom: 2px solid #f39c12;
+  color: #f2ded2;
+  border-bottom: 2px solid #f2ded2;
   padding-bottom: 0.2rem;
 }

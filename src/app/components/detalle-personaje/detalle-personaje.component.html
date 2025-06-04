@@ -1,0 +1,11 @@
+<div class="detalle-container" *ngIf="personaje">
+  <img [src]="personaje.imagen" [alt]="personaje.nombre" class="detalle-imagen" />
+
+  <div class="detalle-info">
+    <h2>{{ personaje.nombre }}</h2>
+    <p><strong>Edad:</strong> {{ personaje.edad }}</p>
+    <p><strong>Rol:</strong> {{ personaje.role }}</p>
+    <p><strong>Descripción:</strong></p>
+    <p>{{ personaje.descripcion }}</p>
+  </div>
+</div>

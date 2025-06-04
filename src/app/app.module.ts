@@ -8,13 +8,15 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
+import { DetallePersonajeComponent } from './components/detalle-personaje/detalle-personaje.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DetallePersonajeComponent
   ],
   imports: [
     BrowserModule,
